@@ -8,23 +8,41 @@ public class SystemMain07 {
 		System.out.println("1-任意の整数をListに代入します");
 		System.out.print("input number>>");
 		int limit = 0;
-		//TODO ここから実装する
+
+		try {
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		}
+
+		NumberList number = new NumberList();
+		number.addFromOneTo(limit);
 
 		System.out.println("****************");
 		System.out.println("Listの合計を計算します");
-		int sum = 0;
+
 		//TODO ここから実装する
+
+		//TODO ここから実装する
+
+		NumberList number1 = new NumberList();
+		number1.calcSumOfList();
+		int sum = 0;
 
 		System.out.println("1から" + limit + "までの合計は" + sum + "です。");
 
 		System.out.println("****************");
 		System.out.println("Listの各要素を2倍します");
 		//TODO ここから実装する
+		NumberList number2 = new NumberList();
+		number2.doubleListEachValue();
 
 		System.out.println("****************");
 		System.out.println("Listの前半分のインデックスの要素を削除します");
 		//TODO ここから実装する
+		numberList.removeIndexOfFirstHalf();
 
+		System.out.println(numberList.getNumbers());
 	}
-
 }
